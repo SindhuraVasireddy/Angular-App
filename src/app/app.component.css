@@ -1,0 +1,8 @@
+.example-button-row {
+    display: table-cell;
+    max-width: 300px;
+  }
+.left
+{
+    margin-left: 8px;
+}

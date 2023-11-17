@@ -1,0 +1,11 @@
+.left
+{
+    margin-left: 8px;
+}
+/* unvisited link */
+a {
+    color: blue;
+}
+:active{
+    color:lightblue;
+}

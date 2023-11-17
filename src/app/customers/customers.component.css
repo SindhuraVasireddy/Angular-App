@@ -1,0 +1,24 @@
+.ta
+{
+  
+    padding-left: 2.2em;
+    
+}
+.ta1
+{
+    padding-left: 1.8em;
+}
+/* for input field */
+.left
+{
+    margin-left: 8px;
+}
+input, select {
+    
+    padding: 12px 20px;
+    margin: 0px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

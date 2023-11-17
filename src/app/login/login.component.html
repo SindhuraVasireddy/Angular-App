@@ -1,0 +1,31 @@
+
+<div class="left">
+	<form>
+		
+		<br><input type="text" placeholder="enter your username" [(ngModel)]="user.username"  ng-model-options="{ updateOn: 'blur' }" name=""  [ngModelOptions]="{standalone: true}"><br><br>
+		
+		<input type="password" name="" [(ngModel)]="user.password" placeholder="enter your password" [ngModelOptions]="{standalone: true}"><br><br>
+		
+		<input type="button" name="" value="Login" (click)="doLogin()">
+	</form>
+
+	<!--<p>
+		Default appearance:
+		<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+		  <mat-button-toggle value="bold">Bold</mat-button-toggle>
+		  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+		  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+		</mat-button-toggle-group>
+	  </p>
+	  
+	  <p>
+		Legacy appearance:
+		<mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+		  <mat-button-toggle value="bold">Bold</mat-button-toggle>
+		  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+		  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+		</mat-button-toggle-group>
+	  </p>
+	-->
+</div>
+
