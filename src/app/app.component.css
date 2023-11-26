@@ -6,3 +6,117 @@
 {
     margin-left: 8px;
 }
+.heading-container {
+  
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.h1 {
+ 
+  /*color: #DB7093;  Set your preferred color */
+  /*color:#00008B;*/
+  color:navy;
+  font-weight: bold;
+  font-size: 1.6em;
+   
+}
+
+.custom-color
+{
+  background-color: #D3D3D3;
+}
+
+.mat-toolbar {
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  position:relative;
+
+}
+
+.heading-container {
+  color: white; /* Optional: Set text color */
+}
+
+.heading-container h1 {
+  margin: 0;
+}
+
+.heading-container p {
+  margin: 0;
+}
+.ICfl
+  {
+    display: flex;
+    align-items: center;
+    
+  }
+@media screen and (min-width: 427px) and (max-width: 790px) {
+    
+  .h1 {
+    
+    margin-left: 0.1em;
+  }
+  .ICfl
+  {
+    margin-left: 0.5em;
+    display: flexbox;
+    justify-content: center;
+
+  }
+}
+
+
+@media screen and (min-width:331px) and (max-width:376px) {
+ 
+  .h1 {
+   
+    margin-left: 0.1em;
+  }
+  .ICfl
+  {
+    margin-left: 3.7em;
+    display: flexbox;
+    justify-content: left;
+  }
+}
+@media screen and (min-width:377px) and (max-width:426px) {
+  .h1 {
+   
+    margin-left: 0.1em;
+  }
+  .ICfl
+  {
+    margin-left: 5em;
+    display: flexbox;
+    justify-content: left;
+  }
+}
+@media screen and (max-width: 330px) {
+  .h1 {
+   
+    margin-left: 0.1em;
+  }
+  .ICfl
+  {
+    margin-left: 2.1em;
+    display: flexbox;
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 791px) and (max-width: 2000px) {
+  
+  
+  .h1 {
+    
+    margin-left: 0.1em; 
+  }
+  .ICfl
+  {
+    margin-left: 0.5em;
+    display: flexbox;
+    justify-content: center;
+    
+  }
+  
+ 
+}

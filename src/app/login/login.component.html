@@ -1,14 +1,42 @@
-
+<br>
+<br>
 <div class="left">
-	<form>
+	<div class="ic">
+		<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+		<span style="color: darkred; font-weight: bold; scroll-behavior: smooth;">Login page</span>
 		
-		<br><input type="text" placeholder="enter your username" [(ngModel)]="user.username"  ng-model-options="{ updateOn: 'blur' }" name=""  [ngModelOptions]="{standalone: true}"><br><br>
-		
-		<input type="password" name="" [(ngModel)]="user.password" placeholder="enter your password" [ngModelOptions]="{standalone: true}"><br><br>
-		
+	</div>
+	<br>
+	<p>Enter your login credentials</p>
+	
+    <form>
+
+		<br><input type="text" placeholder="enter your username" [(ngModel)]="user.username"
+			ng-model-options="{ updateOn: 'blur' }" name="" [ngModelOptions]="{standalone: true}"><br><br>
+
+		<input type="password" name="" [(ngModel)]="user.password" placeholder="enter your password"
+			[ngModelOptions]="{standalone: true}"><br><br>
+
 		<input type="button" name="" value="Login" (click)="doLogin()">
 	</form>
+</div>
+    <div class="about-section">
+		<h1 style="color: orangered;font-weight: bold;">Website Information</h1>
+		
+		<p>CRM Manager helps to maintain Products and Consumers Details.You can create, update and delete the records of consumers and inventory products list.</p>
+	<p>This website was developed with <span style="color:navy; font-weight: bold;">Angular, Typescript, HTML, CSS, Material UI. </span></p>
+	   
+		<!--<p class="Anime" *ngIf="!isLarge"><img src="../../assets/angular5.png" alt="Material Image" style="height: 70px; width:80px;" ><img src="../../assets/html.png" alt="Material Image" style="height: 70px; width:70px"><img src="../../assets/css.png" alt="Material Image" style="height: 70px; width:70px"><img src="../../assets/ts.png" alt="Material Image" style="height: 70px; width:70px"> <img src="../../assets/material.png" alt="Material Image" style="height: 65px; width:70px"></p>-->
 
+		<div class="floating"><p class="Anime"><img src="../../assets/angular5.png" alt="Angular Image" style="height: 70px; width:80px;" >
+			<img src="../../assets/ts.png" alt="TS Image" style="height: 70px; width:70px"> 
+			<img src="../../assets/html.png" alt="HTML Image" style="height: 75px; width:75px">
+			<img src="../../assets/css.png" alt="CSS Image" style="height: 75px; width:75px">
+			
+			<img src="../../assets/material.png" alt="Material Image" style="height: 65px; width:70px"></p>
+	    </div>
+</div>
+   
 	<!--<p>
 		Default appearance:
 		<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
@@ -27,5 +55,3 @@
 		</mat-button-toggle-group>
 	  </p>
 	-->
-</div>
-

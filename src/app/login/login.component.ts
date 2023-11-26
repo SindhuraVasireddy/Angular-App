@@ -1,12 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Component, OnDestroy } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  constructor(private router: Router) { }
+export class LoginComponent implements OnDestroy {
+ 
+  constructor(private breakpointObserver: BreakpointObserver, private router:Router) {
+    // Initial check for screen size
+    this.isLarge = this.breakpointObserver.isMatched('(min-width: 768px)');
+
+    // Subscribe to changes in screen size
+    this.breakpointSubscription = this.breakpointObserver.observe('(min-width: 768px)').subscribe(result => {
+      this.isLarge = result.matches;
+    });
+  }
 
   user = {             // two way binding:
   	username:"sindhu", // sending data to view and will receive data from view
@@ -27,5 +38,14 @@ export class LoginComponent implements OnInit {
     {
       alert('login failed..');
     }
+  }
+  isLarge: boolean;
+  private breakpointSubscription: Subscription;
+
+ 
+
+  ngOnDestroy(): void {
+    // Clean up the subscription when the component is destroyed
+    this.breakpointSubscription.unsubscribe();
   }
 }

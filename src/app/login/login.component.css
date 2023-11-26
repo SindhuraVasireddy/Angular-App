@@ -25,3 +25,89 @@ input[type=button] {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+  .about-section {
+    padding: 20px;
+    text-align: center;
+    background-color: white; /*#f8f8f8c9;*/
+    background-size: cover;
+    color: black;
+    margin-top: 5em;
+  }
+  img{
+   margin-left: 1em;
+   margin-right: 1em;
+   margin-bottom: 1em;;
+   vertical-align: middle;
+  }
+  .Anime{
+    display: inline-block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 2000px) {
+    /* .mat-cell {
+         font-size: 0.75em;
+         padding: 0.5em;
+       }
+       ::ng-deep.mdc-data-table__cell, ::ng-deep.mdc-data-table__header-cell {
+         padding: 0 16px 0 16px;
+     }*/
+    .left {
+     text-align: center;
+     margin-left: 8px;
+     .ic{
+      justify-content: center;
+     }
+    }
+    .floating {  
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      margin-left: 30px;
+      margin-top: 5px;
+  }
+   
+  @keyframes floating {
+      0% { transform: translate(0,  0px); }
+      50%  { transform: translate(0, 20px); }
+      100%   { transform: translate(0, -0px); }    
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .left {
+    text-align: center;
+    margin-left: 8px;
+    .ic{
+     justify-content: center;
+    }
+   }
+   .Anime{
+    display: inline-block;
+  }
+  .floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+}
+
+.ic{
+  display: flex;
+  align-items: center;
+  
+  font-size: 1.5em;
+}
+
+mat-icon {
+  font-size: 24px; /* Adjust the icon size as needed */
+  margin-right: 8px; /* Adjust the space between icon and text */
+}

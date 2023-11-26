@@ -9,6 +9,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { MenuComponent } from './menu/menu.component';
 import { ProductComponent } from './product/product.component';
 
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -17,8 +18,10 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTableModule } from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +42,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatButtonToggleModule,
     MatTableModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

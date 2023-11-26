@@ -1,7 +1,7 @@
 <app-menu></app-menu>
 <div class="page-data">
-    <div class="left">
-      <h2>Customers List</h2>
+    <div class="left" >
+      <h2>Consumers Data</h2>
     
     <form>
       
@@ -21,7 +21,7 @@
     </form>
   </div>
 
-      <table mat-table [dataSource]="customers" class="mat-elevation-z8">
+      <table mat-table [dataSource]="customerService.customers" class="mat-elevation-z8">
 
         <!--- Note that these columns can be defined in any order.
               The actual rendered columns are set as a property on the row definition" -->
